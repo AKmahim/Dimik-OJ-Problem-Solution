@@ -1,21 +1,21 @@
 #include<stdio.h>
-int main()
+#include<math.h>
+
+
+void sieve(int prime_ara[],int root )
 {
-    //freopen("input.txt","rt",stdin);
-   // freopen("output.txt","wt",stdout);
-    int i,T,n;
-    scanf("%d",&T);
-    for(i=1;i<=T;i++){
-        scanf("%d",&n);
-        if(n==2 || n==3 || n==5){
-            printf("%d is a prime\n",n);
-        }
-        else if(n%2==0 || n%3==0 || n%5==0){
-            printf("%d is not a prime\n",n);
-        }
-        else{
-            printf("%d is a prime\n",n);
+    int i,j;
+    for(i=2;i<size;i++){
+        prime_ara[i]=1;
+    }
+    //root=sqrt(size);
+
+    for(i=2;i<=root;i++){
+        if(ara[i]==1){
+            for(j=2;i*j<size;j++){
+                ara[i*j]=0;
+            }
         }
     }
-    return 0;
 }
+
