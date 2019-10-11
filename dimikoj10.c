@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    freopen("input.txt","rt",stdin);
-    freopen("output.txt","wt",stdout);
+    //freopen("input.txt","rt",stdin);
+    //freopen("output.txt","wt",stdout);
     int T;
     int ball_played,r1,r2,B;
     double current_rr,asking_rr;
